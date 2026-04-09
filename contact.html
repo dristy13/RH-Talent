@@ -53,6 +53,15 @@
         .founder-contact-info .contact-badges { display:flex; flex-wrap:wrap; gap:14px; }
         .contact-badge { background:#1a1a1a; color:#fff; padding:10px 18px; border-radius:4px; font-size:14px; font-weight:600; }
         .contact-badge i { color:#c9a84c; margin-right:8px; }
+
+        @media (max-width: 768px) {
+            .contact-hero { height: 300px; }
+            .contact-hero img { height: 300px; }
+            .contact-hero-overlay h1 { font-size: 30px; }
+            .contact-hero-overlay p { font-size: 14px; padding: 0 15px; }
+            .contact-section-main { padding: 40px 0; }
+            .founder-contact-card { padding: 25px; gap: 20px; }
+        }
     </style>
 </head>
 <body>
@@ -80,7 +89,7 @@
                     <span class="menui mid-menu"></span>
                     <span class="menui bottom-menu"></span>
                 </span>
-                <div class="logo" style="display: flex; align-items: center; left: 15px;">
+                <div class="logo" style="display: flex; align-items: center;">
               			<a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
                             <img src="img/brand-logo.png" alt="Logo" style="max-height: 130px; width: auto; object-fit: contain;">
                             <div style="margin-left: 15px; text-align: left; line-height: 1.1;">

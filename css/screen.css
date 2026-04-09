@@ -6713,83 +6713,92 @@ input.form-send {
     .top-footer .widget_text img { max-height: 70px !important; margin-left: -5px !important; }
     .top-footer .widget_text span:first-child { font-size: 16px !important; }
 }
+
 /* =======================================================================
-   PREMIUM MOBILE RESPONSIVENESS REFINEMENTS
+   REFINED PREMIUM MOBILE RESPONSIVENESS (Version 2.0)
    ======================================================================= */
 @media (max-width: 991px) {
-    /* Header Refinement */
+    /* Header Branding Scaling */
     header .logo { 
-        left: 15px !important; 
+        left: 10px !important; 
         transform: translateY(-50%) !important; 
         width: auto !important;
-        max-width: calc(100% - 100px) !important;
+        max-width: 75% !important;
         white-space: nowrap !important;
         display: flex !important;
         align-items: center !important;
     }
     header .logo img { 
-        max-height: 50px !important; 
+        max-height: 44px !important; 
         margin-left: 0 !important; 
     }
     header .logo a div { 
-        margin-left: 10px !important; 
+        margin-left: 8px !important; 
     }
     header .logo a div span:first-child { 
-        font-size: 14px !important; 
-        letter-spacing: 0.5px !important; 
+        font-size: 13px !important; 
+        letter-spacing: 0px !important; 
+        font-weight: 800 !important;
     }
     header .logo a div span:last-child { 
-        font-size: 8px !important; 
-        letter-spacing: 2px !important; 
+        font-size: 7px !important; 
+        letter-spacing: 1.5px !important; 
         margin-top: 1px !important; 
     }
 
-    /* Move Toggle to Right */
+    /* Navigation UI Position */
     header .mobile-navigation-toggle {
-        float: right !important;
-        margin-right: 0 !important;
-        margin-left: 20px !important;
-        top: 2px !important;
+        position: absolute !important;
+        right: 15px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        margin: 0 !important;
         z-index: 1001 !important;
     }
     
     header .actions {
-        float: right !important;
-    }
-
-    /* Slider Text Fix for Mobile */
-    .tp-caption.WhiteTtl {
-        font-size: 24px !important;
-        line-height: 30px !important;
-        white-space: normal !important;
-        text-align: center !important;
-        width: 100% !important;
-    }
-    .tp-caption.WhiteTtlp {
-        font-size: 14px !important;
-        line-height: 20px !important;
-        white-space: normal !important;
-        text-align: center !important;
-        width: 100% !important;
-    }
-
-    /* Footer Cleanup for Mobile */
-    footer .top-footer {
-        padding: 40px 15px !important;
-    }
-    .top-footer .widget_text img { 
-        max-height: 50px !important; 
-        margin-left: -15px !important; 
-    }
-    .top-footer .widget_text span:first-child { 
-        font-size: 15px !important; 
+        position: absolute !important;
+        right: 55px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        margin: 0 !important;
     }
     
+    /* Global Page Heroes Consistency */
+    .about-hero, .service-hero, .contact-hero {
+        height: 280px !important;
+    }
+    .about-hero img, .service-hero img, .contact-hero img {
+        height: 280px !important;
+    }
+    .about-hero-overlay h1, .service-hero-overlay h1, .contact-hero-overlay h1 {
+        font-size: 26px !important;
+    }
+    .about-hero-overlay p, .service-hero-overlay p, .contact-hero-overlay p {
+        font-size: 13px !important;
+    }
+
+    /* Section Spacing */
+    section { padding: 40px 0 !important; }
+    .features-section .section-header { margin-bottom: 30px !important; }
+    
+    /* Footer Realignment */
+    footer .top-footer { padding: 40px 15px !important; }
+    .top-footer .widget_text img { max-height: 45px !important; }
+    
+    footer .bottom-footer { padding: 20px 0 !important; }
     footer .bottom-footer .alignleft, 
     footer .bottom-footer .alignright {
         float: none !important;
         text-align: center !important;
         display: block !important;
-        margin: 5px 0 !important;
+        margin: 4px 0 !important;
+        font-size: 11px !important;
     }
+}
+
+@media (max-width: 480px) {
+    header .logo a div span:first-child { font-size: 11px !important; }
+    header .logo img { max-height: 38px !important; }
+    header .actions { right: 45px !important; }
 }
