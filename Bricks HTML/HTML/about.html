@@ -1,0 +1,592 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>About Us | Realty & Hospitality Talent</title>
+    <meta name="description" content="Realty and Hospitality Talent – A specialized recruitment consultancy led by Neeru Sharma with 18+ years of experience in Real Estate and Hospitality hiring." />
+    <meta name="author" content="Neeru Sharma" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="rs-plugin/css/navigation.css">
+
+    <style>
+        /* About Page Custom Styles */
+        .about-intro-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .about-intro-section .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .who-we-are-section {
+            background: #f8f8f8;
+            padding: 80px 0;
+        }
+        .what-we-do-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+        .our-approach-section {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 80px 0;
+        }
+        .our-approach-section .section-header h5,
+        .our-approach-section .section-header h2,
+        .our-approach-section p { color: #fff; }
+        .why-choose-section {
+            padding: 80px 0;
+            background: #f8f8f8;
+        }
+        .cta-section {
+            background: #c9a84c;
+            padding: 70px 0;
+            text-align: center;
+            color: #fff;
+        }
+        .cta-section h2 { color: #fff; font-size: 36px; margin-bottom: 10px; }
+        .cta-section p { color: #fff; font-size: 18px; margin-bottom: 25px; }
+        .cta-section a.btn { background: #fff; color: #c9a84c; font-weight: 700; }
+        .cta-section a.btn:hover { background: #1a1a1a; color: #fff; }
+
+        .founder-block {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+        .founder-block .founder-info { flex: 1 1 350px; }
+        .founder-block .founder-img { flex: 0 0 260px; text-align: center; }
+        .founder-block .founder-img img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #c9a84c;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        }
+        .founder-name { font-size: 26px; font-weight: 700; color: #1a1a1a; margin-bottom: 5px; }
+        .founder-title { color: #c9a84c; font-size: 15px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 18px; }
+
+        .specialty-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .specialty-list li {
+            padding: 10px 0 10px 32px;
+            position: relative;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 15px;
+            color: #333;
+        }
+        .specialty-list li:last-child { border-bottom: none; }
+        .specialty-list li::before {
+            content: "\f00c";
+            font-family: FontAwesome;
+            color: #c9a84c;
+            position: absolute;
+            left: 0;
+            top: 11px;
+            font-size: 14px;
+        }
+
+        .approach-item {
+            background: rgba(255,255,255,0.07);
+            border-left: 4px solid #c9a84c;
+            padding: 22px 28px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .approach-item h5 { color: #c9a84c; font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+        .approach-item p { color: #ccc; font-size: 14px; margin: 0; }
+
+        .why-card {
+            background: #fff;
+            border: 1px solid #f0f0f0;
+            border-top: 4px solid #c9a84c;
+            padding: 30px 24px;
+            text-align: center;
+            border-radius: 4px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+        }
+        .why-card i { font-size: 36px; color: #c9a84c; margin-bottom: 16px; display: block; }
+        .why-card h5 { font-size: 16px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+        .why-card p { font-size: 14px; color: #666; margin: 0; }
+
+        .stat-box {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .stat-box .number {
+            font-size: 52px;
+            font-weight: 800;
+            color: #c9a84c;
+            line-height: 1;
+        }
+        .stat-box .label {
+            font-size: 14px;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 8px;
+        }
+        .divider-gold { width: 60px; height: 3px; background: #c9a84c; margin: 18px auto; }
+
+        @media (max-width: 768px) {
+            .founder-block { flex-direction: column; }
+            .founder-block .founder-img { margin: 0 auto; }
+        }
+    </style>
+</head>
+<body>
+
+	<!-- Page Wrapper -->
+	<div id="page">
+		
+		<!-- Header -->
+		<header class="header-v2">
+			<div class="top-header">
+                <div class="container-fluid">
+                    <ul class="contacts">
+                        <li><i class="fa fa-phone"></i>+91 78389 52623</li>
+                        <li><a href="mailto:realtyandhospitality@gmail.com"><i class="fa fa-envelope"></i>realtyandhospitality@gmail.com</a></li>
+                    </ul>
+                
+                	<ul class="socials">
+                		<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                		<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                	</ul>
+                </div>
+            </div>
+
+            <div class="bottom-header">
+            	<div class="container-fluid">
+            		<span class="mobile-navigation-toggle hidden-md hidden-lg">
+						<span class="menui top-menu"></span>
+						<span class="menui mid-menu"></span>
+						<span class="menui bottom-menu"></span>
+					</span>
+
+            		<div class="logo" style="display: flex; align-items: center; left: 15px;">
+              			<a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                            <img src="img/brand-logo.png" alt="Logo" style="max-height: 130px; width: auto; object-fit: contain;">
+                            <div style="margin-left: 15px; text-align: left; line-height: 1.1;">
+                                <span style="font-size: 26px; font-weight: 800; color: #ffffff; font-family: 'PT Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.5px;">Realty <span style="color: #c9a84c;">&amp;</span> Hospitality</span>
+                                <span style="display: block; font-size: 14px; font-weight: 400; color: #aaaaaa; letter-spacing: 5px; margin-top: 5px; text-transform: uppercase;">Talent</span>
+                            </div>
+                        </a>
+              		</div>
+			   	
+			   	<ul class="actions">
+	                    <li class="search-trigger">
+					   		<i class="icon fa fa-search dismiss"></i>
+					   		<div class="search-box dismiss">
+					   			<form class="search-form dismiss" action="javascript:void(0)">
+					   				<div class="input-line dismiss">
+					   				 	<input type="text" class="search-input dismiss" placeholder="Type and Hit Enter">
+					   				</div>
+					   			</form>
+					   		</div>
+					   	</li>
+	                </ul>
+				   	<nav class="main-nav" >
+				    <ul class="menu">
+				        <li class="menu-item">
+				            <a href="index.html">Home</a>
+				        </li>
+				        <li class="menu-item current-menu-item">
+				            <a href="about.html">About Us</a>
+				        </li>
+				        <li class="menu-item">
+				            <a href="services.html">Services</a>
+				        </li>
+				        <li class="menu-item">
+				            <a href="contact.html">Contact Us</a>
+				        </li>
+				    </ul>
+				</nav>
+            	</div>
+            </div>
+		</header>
+
+		<!-- Main Content -->
+		<div class="content-wrapper">
+			<section class="hero-section">
+				<h2 class="hidden">Slider Section</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="rev_slider_wrapper">
+								<div class="fullwidth_slider rev_slider" data-arrows="false" data-height="600">
+									<ul>	
+										<li data-transition="fade">		
+											<img src="img/india-realestate-skyline.jpg" alt="Realty and Hospitality Talent" data-bgfit="cover" data-bgposition="center center" data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="110" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+											<div class="tp-caption WhiteTtl tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="-40" 
+												data-whitespace="nowrap"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:-150px;opacity:0;s:1000;e:Power4.easeOut;"
+                                                data-transform_out="opacity:0;s:500;s:500;"
+                                                data-start="1300"
+												data-responsive_offset="on">Realty &amp; Hospitality Talent
+											</div>
+											
+											<div class="tp-caption WhiteTtlp tp-resizeme" 
+												data-x="center" data-hoffset="0" 
+												data-y="middle" data-voffset="30" 
+												data-whitespace="pre"
+												data-transform_idle="o:1;"
+                                                data-transform_in="y:-100px;opacity:0;s:1000;e:Power2.easeOut;"
+												data-transform_out="opacity:0;s:500;s:500;"
+												data-start="1700" 
+												data-responsive_offset="on">Specialized Recruitment Consultancy | Real Estate &amp; Hospitality
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- About Intro -->
+			<section class="about-intro-section">
+				<div class="container">
+					<div class="section-header text-center">
+						<h5 class="subtitle">About Us</h5>
+						<h2>Realty &amp; Hospitality Talent</h2>
+						<span><i></i></span>
+						<p style="max-width:720px;margin:0 auto;font-size:17px;color:#555;line-height:1.8;">
+							A specialized recruitment consultancy dedicated to connecting businesses with the right talent across the <strong>real estate</strong> and <strong>hospitality</strong> sectors. With over <strong>18 years of industry experience</strong>, we bring deep market insight and a strong understanding of hiring challenges — enabling us to deliver quality candidates, faster hiring solutions, and long-term value to our clients.
+						</p>
+					</div>
+
+					<!-- Stats Row -->
+					<div class="row" style="margin-top:50px;border-top:1px solid #f0f0f0;padding-top:40px;background:url('img/real-estate-skyline.jpg') center/cover no-repeat;border-radius:8px;position:relative;overflow:hidden;">
+						<div style="position:absolute;inset:0;background:rgba(255,255,255,0.88);z-index:0;"></div>
+						<div class="col-md-4 col-sm-4" style="position:relative;z-index:1;">
+							<div class="stat-box">
+								<div class="number">18+</div>
+								<div class="label">Years of Experience</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4" style="position:relative;z-index:1;">
+							<div class="stat-box">
+								<div class="number">500+</div>
+								<div class="label">Successful Placements</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4" style="position:relative;z-index:1;">
+							<div class="stat-box">
+								<div class="number">2</div>
+								<div class="label">Core Industry Verticals</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Who We Are -->
+			<section class="who-we-are-section" style="background:url('img/india-resort-pool.jpg') right center/cover no-repeat;position:relative;">
+				<div style="position:absolute;inset:0;background:rgba(248,248,248,0.93);z-index:0;"></div>
+				<div class="container" style="position:relative;z-index:1;">
+					<div class="founder-block">
+						<div class="founder-img">
+							<!-- Founder Portrait -->
+							<img src="img/india-luxury-hotel.jpg" alt="Neeru Sharma - HR Consultant & Recruitment Specialist" style="width:220px;height:220px;border-radius:50%;object-fit:cover;border:5px solid #c9a84c;box-shadow:0 8px 32px rgba(0,0,0,0.18);display:block;margin:0 auto;">
+							<div style="margin-top:18px;">
+								<div class="founder-name" style="text-align:center;">Neeru Sharma</div>
+								<div class="founder-title" style="text-align:center;">HR Consultant &amp; Recruitment Specialist</div>
+							</div>
+						</div>
+						<div class="founder-info">
+							<h5 class="subtitle">Who We Are</h5>
+							<h2>Led by Expertise &amp; Passion</h2>
+							<div class="divider-gold" style="margin:18px 0;"></div>
+							<p style="font-size:16px;color:#555;line-height:1.85;margin-bottom:18px;">
+								Led by <strong>Neeru Sharma</strong>, an accomplished HR Consultant and Recruitment Specialist with <strong>18+ years of experience</strong>, we offer a personalized and result-driven approach to talent acquisition.
+							</p>
+							<p style="font-size:15px;color:#666;line-height:1.8;margin-bottom:20px;">
+								Our expertise lies in understanding both client requirements and candidate potential — ensuring the perfect match that drives business success.
+							</p>
+							<ul style="list-style:none;padding:0;margin:0;">
+								<li style="padding:6px 0;color:#333;"><i class="fa fa-check" style="color:#c9a84c;margin-right:10px;"></i> <strong>Name:</strong> Neeru Sharma</li>
+								<li style="padding:6px 0;color:#333;"><i class="fa fa-check" style="color:#c9a84c;margin-right:10px;"></i> <strong>Phone:</strong> +91 78389 52623</li>
+								<li style="padding:6px 0;color:#333;"><i class="fa fa-check" style="color:#c9a84c;margin-right:10px;"></i> <strong>Email:</strong> realtyandhospitality@gmail.com</li>
+								<li style="padding:6px 0;color:#333;"><i class="fa fa-check" style="color:#c9a84c;margin-right:10px;"></i> <strong>Alternate Email:</strong> neerumadan26@gmail.com</li>
+								<li style="padding:6px 0;color:#333;"><i class="fa fa-check" style="color:#c9a84c;margin-right:10px;"></i> <strong>Experience:</strong> 18+ Years in Recruitment</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- What We Do -->
+			<section class="what-we-do-section" style="background:url('img/india-hotel-exterior.jpg') center/cover no-repeat;position:relative;">
+				<div style="position:absolute;inset:0;background:rgba(255,255,255,0.93);z-index:0;"></div>
+				<div class="container" style="position:relative;z-index:1;">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="section-header">
+								<h5 class="subtitle">What We Do</h5>
+								<h2>Our Specializations</h2>
+								<span><i></i></span>
+								<p>We specialize in recruitment across industry sectors that demand precision, professionalism, and in-depth market knowledge. Our mission is to make hiring <strong>efficient, reliable, and impactful</strong>.</p>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<ul class="specialty-list" style="margin-top:0;">
+								<li>Real Estate Companies</li>
+								<li>Hotels &amp; Hospitality Brands</li>
+								<li>Sales &amp; Business Development Roles</li>
+								<li>Front Office &amp; Operations</li>
+								<li>Mid &amp; Senior-Level Positions</li>
+							</ul>
+							<div style="margin-top:30px;padding:24px;background:#fffbf0;border-left:4px solid #c9a84c;border-radius:4px;">
+								<p style="margin:0;color:#555;font-size:15px;line-height:1.8;">
+									<strong style="color:#c9a84c;">Our Mission:</strong> To make hiring efficient, reliable, and impactful — connecting the right talent with the right opportunity, every time.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Our Approach (Dark Section) -->
+			<section class="our-approach-section" style="background:url('img/india-office-interior.jpg') center/cover no-repeat;position:relative;">
+				<div style="position:absolute;inset:0;background:rgba(20,20,20,0.88);z-index:0;"></div>
+				<div class="container" style="position:relative;z-index:1;">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="section-header" style="margin-bottom:30px;">
+								<h5 class="subtitle" style="color:#c9a84c;">Our Approach</h5>
+								<h2 style="color:#fff;">How We Work</h2>
+								<span><i></i></span>
+								<p style="color:#aaa;">At Realty and Hospitality Talent, we believe hiring is not just about filling positions. The right talent drives long-term growth, and experience + insight = better hiring decisions.</p>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="approach-item">
+								<h5>✔ Pre-Screened, High-Quality Candidates</h5>
+								<p>Every candidate is carefully vetted before being presented to our clients, ensuring you only meet the best fits for your role.</p>
+							</div>
+							<div class="approach-item">
+								<h5>✔ Faster Turnaround Time</h5>
+								<p>Our deep talent networks and streamlined process mean we deliver qualified candidates quickly — reducing your time-to-hire significantly.</p>
+							</div>
+							<div class="approach-item">
+								<h5>✔ Strong Alignment Between Role &amp; Candidate</h5>
+								<p>We understand both sides of the equation — your business needs and the candidate's strengths — ensuring long-term placements that truly work.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Why Choose Us -->
+			<section class="why-choose-section" style="background:url('img/india-boardroom.jpg') center/cover no-repeat;position:relative;">
+				<div style="position:absolute;inset:0;background:rgba(248,248,248,0.94);z-index:0;"></div>
+				<div class="container" style="position:relative;z-index:1;">
+					<div class="section-header" style="text-align:center;margin-bottom:50px;">
+						<h5 class="subtitle">Why Choose Us</h5>
+						<h2>Our Competitive Advantage</h2>
+						<span><i></i></span>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="why-card">
+								<i class="fa fa-trophy"></i>
+								<h5>18+ Years of Expertise</h5>
+								<p>Nearly two decades of deep domain experience in real estate and hospitality recruitment sets us apart.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="why-card">
+								<i class="fa fa-building"></i>
+								<h5>Industry-Focused Solutions</h5>
+								<p>We don't generalize. Our hiring solutions are crafted specifically for real estate and hospitality verticals.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="why-card">
+								<i class="fa fa-user-circle"></i>
+								<h5>Personalized Client Approach</h5>
+								<p>Every client gets dedicated attention. We understand your unique culture, goals, and hiring expectations.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="why-card">
+								<i class="fa fa-users"></i>
+								<h5>Strong Talent Network</h5>
+								<p>Access to a wide and qualified pool of professionals across all levels — from frontline staff to senior leadership.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="why-card">
+								<i class="fa fa-star"></i>
+								<h5>Commitment to Quality</h5>
+								<p>Quality is non-negotiable. We maintain high standards at every step of the recruitment process.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="why-card">
+								<i class="fa fa-handshake-o"></i>
+								<h5>Long-Term Success Focus</h5>
+								<p>We measure our success by the long-term success of our placements and the growth of our client relationships.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA / Get In Touch -->
+			<section class="cta-section" style="background:url('img/india-heritage-building.jpg') center/cover no-repeat;position:relative;">
+				<div style="position:absolute;inset:0;background:rgba(201,168,76,0.90);z-index:0;"></div>
+				<div class="container" style="position:relative;z-index:1;">
+					<h2>Ready to Build Your Dream Team?</h2>
+					<p>Looking to build a strong and capable team? We're here to help.</p>
+					<p style="font-size:22px;font-weight:700;margin-bottom:30px;"><i class="fa fa-phone" style="margin-right:8px;"></i> +91 78389 52623</p>
+					<a href="contact.html" class="btn yellow medium dark-hover">Get In Touch</a>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+				<!-- Footer -->
+		<footer>
+			<div class="top-footer" style="padding:60px 0;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="widget widget_text">
+	                            <h4 class="widget-title" style="color:#fff;">About Us</h4>
+	                            <div class="widget-body">
+                                    <div style="margin-bottom: 20px; display: flex; align-items: center; margin-left: -25px;">
+                                        <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                                            <img src="img/brand-logo.png" alt="Logo" style="height: 75px; width: auto; object-fit: contain;">
+                                            <div style="text-align: left; line-height: 1.1; margin-left: 10px;">
+                                                <span style="font-size: 16px; font-weight: 800; color: #ffffff; font-family: 'PT Sans', sans-serif; text-transform: uppercase; letter-spacing: 1px;">Realty <span style="color: #c9a84c;">&amp;</span> Hospitality</span>
+                                                <span style="display: block; font-size: 11px; font-weight: 400; color: #aaaaaa; letter-spacing: 4px; margin-top: 4px; text-transform: uppercase;">Talent</span>
+                                            </div>
+                                        </a>
+                                    </div>
+	                            	<p style="color:#aaa; line-height: 1.8;">A specialized recruitment consultancy for Real Estate and Hospitality with 18+ years of expertise. We connect the right talent with the right businesses.</p>
+	                            </div>
+	                        </div>
+						</div>
+						
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="widget">
+	                            <h4 class="widget-title">Our Services</h4>
+	                            <div class="widget-body">
+	                            	<ul class="clean-list" style="line-height:2.2;">
+	                            		<li><a href="services.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Real Estate Recruitment</a></li>
+	                            		<li><a href="services.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Hospitality Talent</a></li>
+	                            		<li><a href="services.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Sales &amp; Business Dev</a></li>
+	                            		<li><a href="services.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Front Office Roles</a></li>
+	                            		<li><a href="services.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Executive Search</a></li>
+	                            	</ul>
+	                            </div>
+	                        </div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="widget">
+	                            <h4 class="widget-title">Quick Links</h4>
+	                            <div class="widget-body">
+	                            	<ul class="clean-list" style="line-height:2.2;">
+	                            		<li><a href="index.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Home</a></li>
+	                            		<li><a href="about.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> About Us</a></li>
+	                            		<li><a href="services.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Services</a></li>
+	                            		<li><a href="contact.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Contact Us</a></li>
+	                            	</ul>
+	                            </div>
+	                        </div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="widget widget_contact">
+	                            <h4 class="widget-title">Contact Info</h4>
+	                            <div class="widget-body">
+	                            	<ul class="contact-info clean-list" style="margin:0;">
+	                            		<li style="margin-bottom:12px;display:flex;">
+	                            			<i class="fa fa-phone" style="color:#c9a84c;font-size:18px;margin-right:12px;margin-top:3px;"></i>
+                                            <div>
+                                                <span style="display:block;font-size:12px;text-transform:uppercase;color:#999;letter-spacing:1px;margin-bottom:2px;">Phone:</span>
+	                            			    <p style="color:#ffffff;font-weight:600;margin:0;">+91 78389 52623</p>
+                                            </div>
+	                            		</li>
+	                            		<li style="margin-bottom:12px;display:flex;">
+                                            <i class="fa fa-envelope" style="color:#c9a84c;font-size:18px;margin-right:12px;margin-top:3px;"></i>
+	                            			<div>
+                                                <span style="display:block;font-size:12px;text-transform:uppercase;color:#999;letter-spacing:1px;margin-bottom:2px;">Email:</span>
+	                            			    <p style="margin:0;"><a href="mailto:realtyandhospitality@gmail.com" style="color:#ffffff;font-weight:600;">realtyandhospitality@gmail.com</a></p>
+                                            </div>
+	                            		</li>
+	                            		<li style="margin-top:20px;">
+	                            			<ul class="socials clean-list">
+	                            				<li><a href="#" style="color:#fff;background:#3b5998;width:32px;height:32px;line-height:32px;text-align:center;border-radius:4px;display:inline-block;"><i class="fa fa-facebook"></i></a></li>
+	                            				<li><a href="#" style="color:#fff;background:#e4405f;width:32px;height:32px;line-height:32px;text-align:center;border-radius:4px;display:inline-block;"><i class="fa fa-instagram"></i></a></li>
+	                            				<li><a href="#" style="color:#fff;background:#0077b5;width:32px;height:32px;line-height:32px;text-align:center;border-radius:4px;display:inline-block;"><i class="fa fa-linkedin"></i></a></li>
+	                            			</ul>
+	                            		</li>
+	                            	</ul>
+	                            </div>
+	                        </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom-footer" style="background:#1a1a1a;padding:24px 0;">
+				<div class="container">
+					<p class="alignleft align-left copyright" style="color:#aaa;margin:0;">
+						Copyright &copy; 2024 Realty &amp; Hospitality Talent. All Rights Reserved.
+					</p>
+					<p class="alignright align-right copyright" style="color:#aaa;margin:0;">
+						Led by <strong style="color:#fff;">Neeru Sharma</strong> | HR Consultant &amp; Recruitment Specialist
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/modernizr.js"></script>
+		<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<!-- rs-plugin extensions -->
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+	<!-- //rs-plugin extensions -->
+	<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/isotope.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/options.js"></script>
+</body>
+</html>

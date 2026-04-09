@@ -1,0 +1,469 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>Services | Realty &amp; Hospitality Talent</title>
+    <meta name="description" content="Recruitment services for Real Estate, Hotels, Hospitality, Sales and Business Development by Realty and Hospitality Talent." />
+    <meta name="author" content="Neeru Sharma" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="rs-plugin/css/navigation.css">
+    <style>
+        .service-hero { position:relative; height:420px; overflow:hidden; }
+        .service-hero img { width:100%; height:420px; object-fit:cover; }
+        .service-hero-overlay { position:absolute; inset:0; background:rgba(20,20,20,0.72); display:flex; align-items:center; justify-content:center; flex-direction:column; text-align:center; }
+        .service-hero-overlay h1 { color:#fff; font-size:42px; font-weight:800; margin-bottom:10px; }
+        .service-hero-overlay p { color:#c9a84c; font-size:18px; letter-spacing:1px; }
+        .services-intro { padding:70px 0; background:#fff; }
+        .service-card-section { padding:60px 0; }
+        .service-card-section.alt { background:#f8f8f8; }
+        .service-card { background:#fff; border-radius:6px; box-shadow:0 4px 24px rgba(0,0,0,0.08); overflow:hidden; margin-bottom:30px; transition:transform .3s; }
+        .service-card:hover { transform:translateY(-6px); box-shadow:0 12px 40px rgba(0,0,0,0.14); }
+        .service-card img { width:100%; height:220px; object-fit:cover; }
+        .service-card-body { padding:28px 24px; }
+        .service-card-body i { font-size:32px; color:#c9a84c; margin-bottom:14px; display:block; }
+        .service-card-body h4 { font-size:20px; font-weight:700; color:#1a1a1a; margin-bottom:10px; }
+        .service-card-body p { color:#666; font-size:14px; line-height:1.8; margin-bottom:16px; }
+        .service-card-body ul { padding-left:0; list-style:none; margin:0; }
+        .service-card-body ul li { padding:5px 0; color:#555; font-size:13px; }
+        .service-card-body ul li::before { content:"\f00c"; font-family:FontAwesome; color:#c9a84c; margin-right:8px; }
+        .process-section { padding:70px 0; background:url('img/india-realestate-skyline.jpg') center/cover no-repeat; position:relative; }
+        .process-section::before { content:''; position:absolute; inset:0; background:rgba(15,15,15,0.88); }
+        .process-section .container { position:relative; z-index:1; }
+        .process-step { text-align:center; padding:30px 20px; }
+        .process-step .step-num { width:60px; height:60px; border-radius:50%; background:#c9a84c; color:#fff; font-size:22px; font-weight:800; display:flex; align-items:center; justify-content:center; margin:0 auto 20px; }
+        .process-step h5 { color:#fff; font-size:16px; font-weight:700; margin-bottom:10px; }
+        .process-step p { color:#aaa; font-size:14px; }
+        .cta-strip { background:#c9a84c; padding:60px 0; text-align:center; }
+        .cta-strip h2 { color:#fff; font-size:32px; font-weight:800; margin-bottom:10px; }
+        .cta-strip p { color:#fff; font-size:16px; margin-bottom:24px; }
+        .cta-strip a.btn { background:#1a1a1a; color:#fff; border:none; }
+        .cta-strip a.btn:hover { background:#fff; color:#1a1a1a; }
+        .split-section { padding:70px 0; }
+        .split-section img { width:100%; height:380px; object-fit:cover; border-radius:6px; }
+        .split-section .split-text { padding:30px 20px; }
+        .split-section .split-text h2 { font-size:28px; font-weight:800; color:#1a1a1a; margin-bottom:16px; }
+        .split-section .split-text p { color:#666; line-height:1.8; margin-bottom:14px; }
+    </style>
+</head>
+<body>
+<div id="page">
+
+    <!-- Header -->
+    <header class="header-v2">
+        <div class="top-header">
+            <div class="container-fluid">
+                <ul class="contacts">
+                    <li><i class="fa fa-phone"></i>+91 78389 52623</li>
+                    <li><a href="mailto:realtyandhospitality@gmail.com"><i class="fa fa-envelope"></i>realtyandhospitality@gmail.com</a></li>
+                </ul>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container-fluid">
+                <span class="mobile-navigation-toggle hidden-md hidden-lg">
+                    <span class="menui top-menu"></span>
+                    <span class="menui mid-menu"></span>
+                    <span class="menui bottom-menu"></span>
+                </span>
+                <div class="logo" style="display: flex; align-items: center; left: 15px;">
+              			<a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                            <img src="img/brand-logo.png" alt="Logo" style="max-height: 130px; width: auto; object-fit: contain;">
+                            <div style="margin-left: 15px; text-align: left; line-height: 1.1;">
+                                <span style="font-size: 26px; font-weight: 800; color: #ffffff; font-family: 'PT Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.5px;">Realty <span style="color: #c9a84c;">&amp;</span> Hospitality</span>
+                                <span style="display: block; font-size: 14px; font-weight: 400; color: #aaaaaa; letter-spacing: 5px; margin-top: 5px; text-transform: uppercase;">Talent</span>
+                            </div>
+                        </a>
+              		</div>
+                <ul class="actions">
+                    <li class="search-trigger">
+                        <i class="icon fa fa-search dismiss"></i>
+                        <div class="search-box dismiss">
+                            <form class="search-form dismiss" action="javascript:void(0)">
+                                <div class="input-line dismiss">
+                                    <input type="text" class="search-input dismiss" placeholder="Type and Hit Enter">
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+				   	<nav class="main-nav" >
+                    <ul class="menu">
+                        <li class="menu-item"><a href="index.html">Home</a></li>
+                        <li class="menu-item"><a href="about.html">About Us</a></li>
+                        <li class="menu-item current-menu-item"><a href="services.html">Services</a></li>
+                        <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+
+        <!-- Hero Banner -->
+        <div class="service-hero">
+            <img src="img/india-realestate-skyline.jpg" alt="Recruitment Services">
+            <div class="service-hero-overlay">
+                <h1>Our Recruitment Services</h1>
+                <p>Specialized Hiring Solutions for Real Estate &amp; Hospitality</p>
+            </div>
+        </div>
+
+        <!-- Intro -->
+        <section class="services-intro">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h5 class="subtitle">What We Offer</h5>
+                    <h2>End-to-End Recruitment Solutions</h2>
+                    <span><i></i></span>
+                    <p style="max-width:700px;margin:0 auto;color:#555;font-size:16px;line-height:1.8;">
+                        With 18+ years of deep industry expertise, we deliver tailored recruitment services that match businesses with the right talent across Real Estate and Hospitality sectors. Our mission is to make hiring <strong>efficient, reliable, and impactful</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Cards Row 1 -->
+        <section class="service-card-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <img src="img/real-estate-skyline.jpg" alt="Real Estate Recruitment">
+                            <div class="service-card-body">
+                                <i class="fa fa-building"></i>
+                                <h4>Real Estate Recruitment</h4>
+                                <p>We source top-tier talent for real estate companies — from sales executives to senior leadership roles.</p>
+                                <ul>
+                                    <li>Sales Managers &amp; Executives</li>
+                                    <li>Property Consultants</li>
+                                    <li>Business Development Managers</li>
+                                    <li>Senior &amp; Leadership Roles</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <img src="img/india-hotel-exterior.jpg" alt="Hospitality Recruitment">
+                            <div class="service-card-body">
+                                <i class="fa fa-hotel"></i>
+                                <h4>Hotels &amp; Hospitality Talent</h4>
+                                <p>We specialize in placing professionals in luxury hotels, resorts, and hospitality brands across India.</p>
+                                <ul>
+                                    <li>Front Office Managers</li>
+                                    <li>Guest Relations Executives</li>
+                                    <li>F&amp;B Managers</li>
+                                    <li>Operations &amp; Revenue Managers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <img src="img/india-boardroom.jpg" alt="Sales Recruitment">
+                            <div class="service-card-body">
+                                <i class="fa fa-line-chart"></i>
+                                <h4>Sales &amp; Business Development</h4>
+                                <p>Finding high-performing sales professionals who drive revenue and build strong client relationships.</p>
+                                <ul>
+                                    <li>Sales Executives &amp; Managers</li>
+                                    <li>Business Development Heads</li>
+                                    <li>Channel Sales Managers</li>
+                                    <li>Regional Sales Directors</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Split Section: Mid/Senior Hiring -->
+        <section class="split-section" style="background:#f8f8f8;">
+            <div class="container">
+                <div class="row" style="align-items:center;">
+                    <div class="col-md-6">
+                        <img src="img/india-office-interior.jpg" alt="Mid Senior Hiring">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="split-text" style="padding:30px 40px;">
+                            <h5 class="subtitle">Specialized Hiring</h5>
+                            <h2>Mid &amp; Senior-Level Positions</h2>
+                            <div style="width:50px;height:3px;background:#c9a84c;margin:16px 0;"></div>
+                            <p>We understand that senior hires are high-stakes decisions. Our thorough screening, background checks, and competency mapping ensure you only meet candidates who are truly ready to lead.</p>
+                            <p>We work with confidentiality and care — especially for sensitive leadership and CXO-level searches.</p>
+                            <ul style="list-style:none;padding:0;margin:0;">
+                                <li style="padding:6px 0;"><i class="fa fa-check" style="color:#c9a84c;margin-right:8px;"></i> General Managers &amp; Hotel GMs</li>
+                                <li style="padding:6px 0;"><i class="fa fa-check" style="color:#c9a84c;margin-right:8px;"></i> VP Sales &amp; Marketing</li>
+                                <li style="padding:6px 0;"><i class="fa fa-check" style="color:#c9a84c;margin-right:8px;"></i> Project Heads &amp; Directors</li>
+                                <li style="padding:6px 0;"><i class="fa fa-check" style="color:#c9a84c;margin-right:8px;"></i> CXO &amp; Leadership Mandates</li>
+                            </ul>
+                            <a href="contact.html" class="btn yellow" style="margin-top:24px;">Discuss a Requirement</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Cards Row 2 -->
+        <section class="service-card-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <img src="img/india-resort-pool.jpg" alt="Front Office Recruitment">
+                            <div class="service-card-body">
+                                <i class="fa fa-users"></i>
+                                <h4>Front Office &amp; Operations</h4>
+                                <p>Placing customer-facing professionals who represent your brand with excellence and polish.</p>
+                                <ul>
+                                    <li>Front Desk Officers</li>
+                                    <li>Guest Services Agents</li>
+                                    <li>Concierge Staff</li>
+                                    <li>Operations Supervisors</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <img src="img/india-heritage-building.jpg" alt="Executive Search">
+                            <div class="service-card-body">
+                                <i class="fa fa-search"></i>
+                                <h4>Executive Search</h4>
+                                <p>Confidential, targeted headhunting for critical leadership mandates where standard hiring falls short.</p>
+                                <ul>
+                                    <li>Heads of Sales &amp; Marketing</li>
+                                    <li>COO &amp; Operations Leaders</li>
+                                    <li>VP &amp; Director-Level Roles</li>
+                                    <li>Niche Specialist Searches</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <img src="img/india-luxury-hotel.jpg" alt="HR Consulting">
+                            <div class="service-card-body">
+                                <i class="fa fa-briefcase"></i>
+                                <h4>HR &amp; Talent Consulting</h4>
+                                <p>Beyond recruitment — we advise on hiring strategy, JD creation, salary benchmarking and workforce planning.</p>
+                                <ul>
+                                    <li>Job Description Writing</li>
+                                    <li>Salary Benchmarking</li>
+                                    <li>Hiring Process Consulting</li>
+                                    <li>Workforce Planning Advice</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section (Dark with bg image) -->
+        <section class="process-section">
+            <div class="container">
+                <div class="section-header text-center" style="margin-bottom:50px;">
+                    <h5 class="subtitle" style="color:#c9a84c;">Our Process</h5>
+                    <h2 style="color:#fff;">How We Deliver Results</h2>
+                    <span><i></i></span>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="process-step">
+                            <div class="step-num">1</div>
+                            <h5>Understand Brief</h5>
+                            <p>We spend time understanding your exact requirement — role, culture, expectations, and timeline.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="process-step">
+                            <div class="step-num">2</div>
+                            <h5>Search &amp; Screen</h5>
+                            <p>We tap our extensive network and database, then rigorously screen all candidates before shortlisting.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="process-step">
+                            <div class="step-num">3</div>
+                            <h5>Present Candidates</h5>
+                            <p>You receive a curated shortlist of pre-screened, qualified candidates — saving you time and effort.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="process-step">
+                            <div class="step-num">4</div>
+                            <h5>Closure &amp; Onboarding</h5>
+                            <p>We facilitate offer negotiations and stay engaged till the candidate successfully joins.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Split Section 2 -->
+        <section class="split-section">
+            <div class="container">
+                <div class="row" style="align-items:center;">
+                    <div class="col-md-6">
+                        <div class="split-text" style="padding:30px 20px;">
+                            <h5 class="subtitle">Why We're Different</h5>
+                            <h2>The Realty &amp; Hospitality Talent Advantage</h2>
+                            <div style="width:50px;height:3px;background:#c9a84c;margin:16px 0;"></div>
+                            <p>Unlike generic staffing agencies, we are <strong>domain specialists</strong>. Every consultant on our team has direct experience in real estate or hospitality — which means we understand what hiring managers actually need.</p>
+                            <p>You're not just getting a recruiter. You're getting an industry partner who speaks your language.</p>
+                            <div style="display:flex;gap:30px;margin-top:24px;flex-wrap:wrap;">
+                                <div style="text-align:center;">
+                                    <div style="font-size:36px;font-weight:800;color:#c9a84c;">18+</div>
+                                    <div style="font-size:13px;color:#777;text-transform:uppercase;">Years Experience</div>
+                                </div>
+                                <div style="text-align:center;">
+                                    <div style="font-size:36px;font-weight:800;color:#c9a84c;">500+</div>
+                                    <div style="font-size:13px;color:#777;text-transform:uppercase;">Placements</div>
+                                </div>
+                                <div style="text-align:center;">
+                                    <div style="font-size:36px;font-weight:800;color:#c9a84c;">2</div>
+                                    <div style="font-size:13px;color:#777;text-transform:uppercase;">Core Verticals</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/india-boardroom.jpg" alt="Why Choose Us">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Strip -->
+        <section class="cta-strip">
+            <div class="container">
+                <h2>Ready to Hire the Best Talent?</h2>
+                <p>Contact us today and let us find the right people for your team.</p>
+                <p style="font-size:20px;font-weight:700;color:#fff;margin-bottom:24px;"><i class="fa fa-phone" style="margin-right:8px;"></i> +91 78389 52623</p>
+                <a href="contact.html" class="btn">Get in Touch</a>
+            </div>
+        </section>
+
+    </div><!-- end content-wrapper -->
+
+    <!-- Footer -->
+    		<!-- Footer -->
+		<footer>
+			<div class="top-footer" style="padding:60px 0;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="widget widget_text">
+	                            <h4 class="widget-title" style="color:#fff;">About Us</h4>
+	                            <div class="widget-body">
+                                    <div style="margin-bottom: 20px; display: flex; align-items: center; margin-left: -25px;">
+                                        <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                                            <img src="img/brand-logo.png" alt="Logo" style="height: 75px; width: auto; object-fit: contain;">
+                                            <div style="text-align: left; line-height: 1.1; margin-left: 10px;">
+                                                <span style="font-size: 16px; font-weight: 800; color: #ffffff; font-family: 'PT Sans', sans-serif; text-transform: uppercase; letter-spacing: 1px;">Realty <span style="color: #c9a84c;">&amp;</span> Hospitality</span>
+                                                <span style="display: block; font-size: 11px; font-weight: 400; color: #aaaaaa; letter-spacing: 4px; margin-top: 4px; text-transform: uppercase;">Talent</span>
+                                            </div>
+                                        </a>
+                                    </div>
+	                            	<p style="color:#aaa; line-height: 1.8;">A specialized recruitment consultancy for Real Estate and Hospitality with 18+ years of expertise. We connect the right talent with the right businesses.</p>
+	                            </div>
+	                        </div>
+						</div>
+						
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="widget">
+	                            <h4 class="widget-title">Our Services</h4>
+	                            <div class="widget-body">
+	                            	<ul class="clean-list" style="line-height:2.2;">
+	                            		<li><a href="services.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Real Estate Recruitment</a></li>
+	                            		<li><a href="services.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Hospitality Talent</a></li>
+	                            		<li><a href="services.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Sales &amp; Business Dev</a></li>
+	                            		<li><a href="services.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Front Office Roles</a></li>
+	                            		<li><a href="services.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Executive Search</a></li>
+	                            	</ul>
+	                            </div>
+	                        </div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="widget">
+	                            <h4 class="widget-title">Quick Links</h4>
+	                            <div class="widget-body">
+	                            	<ul class="clean-list" style="line-height:2.2;">
+	                            		<li><a href="index.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Home</a></li>
+	                            		<li><a href="about.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> About Us</a></li>
+	                            		<li><a href="services.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Services</a></li>
+	                            		<li><a href="contact.html" style="color:#666;"><i class="fa fa-angle-right" style="margin-right:8px;color:#c9a84c;"></i> Contact Us</a></li>
+	                            	</ul>
+	                            </div>
+	                        </div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="widget widget_contact">
+	                            <h4 class="widget-title">Contact Info</h4>
+	                            <div class="widget-body">
+	                            	<ul class="contact-info clean-list" style="margin:0;">
+	                            		<li style="margin-bottom:12px;display:flex;">
+	                            			<i class="fa fa-phone" style="color:#c9a84c;font-size:18px;margin-right:12px;margin-top:3px;"></i>
+                                            <div>
+                                                <span style="display:block;font-size:12px;text-transform:uppercase;color:#999;letter-spacing:1px;margin-bottom:2px;">Phone:</span>
+	                            			    <p style="color:#ffffff;font-weight:600;margin:0;">+91 78389 52623</p>
+                                            </div>
+	                            		</li>
+	                            		<li style="margin-bottom:12px;display:flex;">
+                                            <i class="fa fa-envelope" style="color:#c9a84c;font-size:18px;margin-right:12px;margin-top:3px;"></i>
+	                            			<div>
+                                                <span style="display:block;font-size:12px;text-transform:uppercase;color:#999;letter-spacing:1px;margin-bottom:2px;">Email:</span>
+	                            			    <p style="margin:0;"><a href="mailto:realtyandhospitality@gmail.com" style="color:#ffffff;font-weight:600;">realtyandhospitality@gmail.com</a></p>
+                                            </div>
+	                            		</li>
+	                            		<li style="margin-top:20px;">
+	                            			<ul class="socials clean-list">
+	                            				<li><a href="#" style="color:#fff;background:#3b5998;width:32px;height:32px;line-height:32px;text-align:center;border-radius:4px;display:inline-block;"><i class="fa fa-facebook"></i></a></li>
+	                            				<li><a href="#" style="color:#fff;background:#e4405f;width:32px;height:32px;line-height:32px;text-align:center;border-radius:4px;display:inline-block;"><i class="fa fa-instagram"></i></a></li>
+	                            				<li><a href="#" style="color:#fff;background:#0077b5;width:32px;height:32px;line-height:32px;text-align:center;border-radius:4px;display:inline-block;"><i class="fa fa-linkedin"></i></a></li>
+	                            			</ul>
+	                            		</li>
+	                            	</ul>
+	                            </div>
+	                        </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom-footer" style="background:#1a1a1a;padding:24px 0;">
+				<div class="container">
+					<p class="alignleft align-left copyright" style="color:#aaa;margin:0;">
+						Copyright &copy; 2024 Realty &amp; Hospitality Talent. All Rights Reserved.
+					</p>
+					<p class="alignright align-right copyright" style="color:#aaa;margin:0;">
+						Led by <strong style="color:#fff;">Neeru Sharma</strong> | HR Consultant &amp; Recruitment Specialist
+					</p>
+				</div>
+			</div>
+		</footer>
+</div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="js/isotope.js"></script>
+<script type="text/javascript" src="js/options.js"></script>
+</body>
+</html>
