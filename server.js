@@ -89,10 +89,17 @@ app.post('/api/contact', (req, res) => {
             return res.status(500).json({ success: false, message: 'Database error' });
         }
 
-        // 2. Send Email
+        // 2. Return success to the browser IMMEDIATELY so the user doesn't wait
+        res.status(200).json({ 
+            success: true, 
+            message: 'Message sent and saved successfully!', 
+            id: this.lastID 
+        });
+
+        // 3. Send Email in the BACKGROUND
         const mailOptions = {
             from: process.env.EMAIL_USER,
-            to: process.env.EMAIL_USER, // Where you want to receive notifications
+            to: process.env.EMAIL_USER,
             subject: `New Contact Form Submission from ${name}`,
             text: `
                 New message received:
@@ -105,16 +112,10 @@ app.post('/api/contact', (req, res) => {
 
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
-                console.error('Email error:', error);
-                // We still return success: true because it's saved in the DB
-                return res.status(200).json({
-                    success: true,
-                    message: 'Message saved to database, but email delivery failed. Check server logs.',
-                    id: this.lastID
-                });
+                console.error('Background Email error:', error);
+            } else {
+                console.log('Background Email sent: ' + info.response);
             }
-            console.log('Email sent: ' + info.response);
-            res.status(200).json({ success: true, message: 'Message sent and saved successfully!', id: this.lastID });
         });
     });
 });
