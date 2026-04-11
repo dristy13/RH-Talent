@@ -751,7 +751,6 @@
         async function handleContactForm(e) {
             e.preventDefault();
             const form = e.target;
-            // Show a small loader text on the button
             const submitBtn = form.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
             submitBtn.innerHTML = "Sending...";
@@ -762,7 +761,10 @@
                 const object = Object.fromEntries(formData);
                 const json = JSON.stringify(object);
 
-                const response = await fetch("http://localhost:5000/api/contact", {
+                // Dynamically determine URL: if opened as file://, use localhost:5000. If via server, use relative path.
+                const apiUrl = window.location.protocol === 'file:' ? 'http://localhost:5000/api/contact' : '/api/contact';
+
+                const response = await fetch(apiUrl, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -771,14 +773,23 @@
                     body: json
                 });
 
-                if (response.status == 200) {
-                    document.getElementById('successPopup').style.display = 'flex';
+                const result = await response.json();
+
+                if (response.ok || response.status === 200) {
+                    const popup = document.getElementById('successPopup');
+                    if (popup) {
+                        popup.style.display = 'flex';
+                    } else {
+                        alert("Thank you! Your message has been sent successfully.");
+                    }
                     form.reset();
                 } else {
-                    alert('Error: ' + result.message);
+                    alert('Message Error: ' + (result.message || 'Please try again later.'));
                 }
             } catch (error) {
-                alert('Something went wrong!');
+                console.error('Submission error:', error);
+                // Last resort fallback
+                alert('We are having trouble connecting to the server. Please ensure the server is running on port 5000.');
             } finally {
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
@@ -786,7 +797,8 @@
         }
 
         function closePopup() {
-            document.getElementById('successPopup').style.display = 'none';
+            const popup = document.getElementById('successPopup');
+            if (popup) popup.style.display = 'none';
         }
     </script>
 </body>
