@@ -761,7 +761,6 @@
                 const object = Object.fromEntries(formData);
                 const json = JSON.stringify(object);
 
-                // Dynamically determine URL: if opened as file://, use localhost:5000. If via server, use relative path.
                 const apiUrl = window.location.protocol === 'file:' ? 'http://localhost:5000/api/contact' : '/api/contact';
 
                 const response = await fetch(apiUrl, {
@@ -773,7 +772,11 @@
                     body: json
                 });
 
-                const result = await response.json();
+                let result;
+                const contentType = response.headers.get("content-type");
+                if (contentType && contentType.includes("application/json")) {
+                    result = await response.json();
+                }
 
                 if (response.ok || response.status === 200) {
                     const popup = document.getElementById('successPopup');
@@ -784,12 +787,12 @@
                     }
                     form.reset();
                 } else {
-                    alert('Message Error: ' + (result.message || 'Please try again later.'));
+                    const errorMsg = result ? result.message : 'The server encountered an issue (Status ' + response.status + ').';
+                    alert('Message Error: ' + errorMsg);
                 }
             } catch (error) {
                 console.error('Submission error:', error);
-                // Last resort fallback
-                alert('We are having trouble connecting to the server. Please ensure the server is running on port 5000.');
+                alert('Connection Error: Could not connect to the backend. If you are testing the live site, ensure Vercel functions are configured.');
             } finally {
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;

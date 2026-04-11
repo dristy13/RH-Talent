@@ -5,13 +5,37 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Security Middleware
+app.use(helmet({
+    contentSecurityPolicy: false, // Disabled to ensure compatibility with existing scripts/fonts
+}));
+
+const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100, // Limit each IP to 100 requests per windowMs
+    message: { message: "Too many requests from this IP, please try again after 15 minutes." }
+});
+
+// Apply rate limiting to all requests
+app.use(limiter);
+
+// Specific rate limit for contact form (prevent spam)
+const contactLimiter = rateLimit({
+    windowMs: 60 * 60 * 1000, // 1 hour
+    max: 10, // Limit each IP to 10 contact submissions per hour
+    message: { message: "Too many message attempts. Please wait an hour before trying again." }
+});
+
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+app.use('/api/contact', contactLimiter);
 app.use(express.static(path.join(__dirname, './')));
 
 // Database Setup
@@ -82,8 +106,13 @@ app.post('/api/contact', (req, res) => {
     });
 });
 
-// API Route to view messages (Dashboard)
+// API Route to view messages (Dashboard) with basic security
 app.get('/admin-view', (req, res) => {
+    const password = req.query.pw;
+    if (password !== process.env.ADMIN_PASSWORD) {
+        return res.status(401).send("Unauthorized: Please provide the correct password in the URL (e.g., /admin-view?pw=yourpassword)");
+    }
+
     db.all("SELECT * FROM messages ORDER BY created_at DESC", [], (err, rows) => {
         if (err) return res.status(500).send("Database Error");
 
