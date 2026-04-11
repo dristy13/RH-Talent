@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <title>Contact Us | Realty &amp; Hospitality Talent</title>
-    <meta name="description" content="Get in touch with Realty and Hospitality Talent. Call or email Neeru Sharma for recruitment needs in Real Estate and Hospitality." />
+    <meta name="description"
+        content="Get in touch with Realty and Hospitality Talent. Call or email Neeru Sharma for recruitment needs in Real Estate and Hospitality." />
     <meta name="author" content="Neeru Sharma" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -12,410 +14,781 @@
     <link rel="stylesheet" type="text/css" href="css/screen.css" />
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css">
     <link rel="stylesheet" type="text/css" href="rs-plugin/css/layers.css">
-	<link rel="stylesheet" type="text/css" href="rs-plugin/css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="rs-plugin/css/navigation.css">
     <style>
-        .contact-hero { position:relative; height:380px; overflow:hidden; }
-        .contact-hero img { width:100%; height:380px; object-fit:cover; }
-        .contact-hero-overlay { position:absolute; inset:0; background:rgba(20,20,20,0.72); display:flex; align-items:center; justify-content:center; flex-direction:column; text-align:center; }
-        .contact-hero-overlay h1 { color:#fff; font-size:40px; font-weight:800; margin-bottom:10px; }
-        .contact-hero-overlay p { color:#c9a84c; font-size:17px; letter-spacing:1px; }
-        .contact-section-main { padding:70px 0; background:#fff; }
-        .contact-info-box { background:#1a1a1a; color:#fff; padding:40px 36px; border-radius:6px; height:100%; }
-        .contact-info-box h3 { color:#c9a84c; font-size:22px; font-weight:700; margin-bottom:24px; }
-        .contact-info-item { display:flex; align-items:flex-start; gap:16px; margin-bottom:28px; }
-        .contact-info-item i { font-size:22px; color:#c9a84c; margin-top:3px; flex-shrink:0; }
-        .contact-info-item .label { font-size:12px; text-transform:uppercase; letter-spacing:1px; color:#888; margin-bottom:4px; }
-        .contact-info-item .val { font-size:15px; color:#fff; line-height:1.7; }
-        .contact-info-item .val a { color:#fff; text-decoration:none; }
-        .contact-info-item .val a:hover { color:#c9a84c; }
-        .contact-form-box { background:#f8f8f8; padding:40px 36px; border-radius:6px; }
-        .contact-form-box h3 { color:#1a1a1a; font-size:22px; font-weight:700; margin-bottom:24px; }
-        .form-group { margin-bottom:20px; }
-        .form-group label { display:block; font-size:13px; font-weight:600; color:#555; margin-bottom:6px; text-transform:uppercase; letter-spacing:0.5px; }
-        .form-control-custom { width:100%; padding:12px 16px; border:1px solid #e0e0e0; border-radius:4px; font-size:14px; color:#333; background:#fff; transition:border .3s; outline:none; }
-        .form-control-custom:focus { border-color:#c9a84c; }
-        textarea.form-control-custom { height:140px; resize:vertical; }
-        .btn-submit { background:#c9a84c; color:#fff; border:none; padding:14px 40px; font-size:15px; font-weight:700; border-radius:4px; cursor:pointer; letter-spacing:1px; text-transform:uppercase; transition:background .3s; }
-        .btn-submit:hover { background:#1a1a1a; }
-        .why-contact-section { background:url('img/real-estate-skyline.jpg') center/cover no-repeat; position:relative; padding:70px 0; }
-        .why-contact-section::before { content:''; position:absolute; inset:0; background:rgba(26,26,26,0.88); }
-        .why-contact-section .container { position:relative; z-index:1; }
-        .why-box { text-align:center; padding:30px 20px; }
-        .why-box i { font-size:40px; color:#c9a84c; margin-bottom:16px; display:block; }
-        .why-box h5 { color:#fff; font-size:16px; font-weight:700; margin-bottom:10px; }
-        .why-box p { color:#aaa; font-size:14px; }
-        .founder-contact-section { background:#fff; padding:70px 0; }
-        .founder-contact-card { display:flex; align-items:center; gap:40px; background:#f8f8f8; padding:40px; border-radius:8px; flex-wrap:wrap; }
-        .founder-contact-card img { width:180px; height:180px; border-radius:50%; object-fit:cover; border:5px solid #c9a84c; flex-shrink:0; }
-        .founder-contact-info h3 { font-size:26px; font-weight:800; color:#1a1a1a; margin-bottom:4px; }
-        .founder-contact-info .role { color:#c9a84c; font-size:14px; text-transform:uppercase; letter-spacing:1px; font-weight:600; margin-bottom:16px; }
-        .founder-contact-info p { color:#666; line-height:1.8; margin-bottom:16px; }
-        .founder-contact-info .contact-badges { display:flex; flex-wrap:wrap; gap:14px; }
-        .contact-badge { background:#1a1a1a; color:#fff; padding:10px 18px; border-radius:4px; font-size:14px; font-weight:600; }
-        .contact-badge i { color:#c9a84c; margin-right:8px; }
+        .contact-hero {
+            position: relative;
+            height: 380px;
+            overflow: hidden;
+        }
+
+        .contact-hero img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+        }
+
+        .contact-hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(20, 20, 20, 0.72);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .contact-hero-overlay h1 {
+            color: #fff;
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .contact-hero-overlay p {
+            color: #c9a84c;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+
+        .contact-section-main {
+            padding: 70px 0;
+            background: #fff;
+        }
+
+        .contact-info-box {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 40px 36px;
+            border-radius: 6px;
+            height: 100%;
+        }
+
+        .contact-info-box h3 {
+            color: #c9a84c;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .contact-info-item i {
+            font-size: 22px;
+            color: #c9a84c;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+
+        .contact-info-item .label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #888;
+            margin-bottom: 4px;
+        }
+
+        .contact-info-item .val {
+            font-size: 15px;
+            color: #fff;
+            line-height: 1.7;
+        }
+
+        .contact-info-item .val a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .contact-info-item .val a:hover {
+            color: #c9a84c;
+        }
+
+        .contact-form-box {
+            background: #f8f8f8;
+            padding: 40px 36px;
+            border-radius: 6px;
+            height: 100%;
+        }
+
+        .contact-form-box h3 {
+            color: #1a1a1a;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-control-custom {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #333;
+            background: #fff;
+            transition: border .3s;
+            outline: none;
+        }
+
+        .form-control-custom:focus {
+            border-color: #c9a84c;
+        }
+
+        textarea.form-control-custom {
+            height: 180px;
+            resize: vertical;
+        }
+
+        .btn-submit {
+            background: #c9a84c;
+            color: #fff;
+            border: none;
+            padding: 14px 40px;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 4px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: background .3s;
+        }
+
+        .btn-submit:hover {
+            background: #1a1a1a;
+        }
+
+        .why-contact-section {
+            background: url('img/real-estate-skyline.jpg') center/cover no-repeat;
+            position: relative;
+            padding: 70px 0;
+        }
+
+        .why-contact-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(26, 26, 26, 0.88);
+        }
+
+        .why-contact-section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .why-box {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .why-box i {
+            font-size: 40px;
+            color: #c9a84c;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .why-box h5 {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .why-box p {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .founder-contact-section {
+            background: #fff;
+            padding: 70px 0;
+        }
+
+        .founder-contact-card {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            background: #f8f8f8;
+            padding: 40px;
+            border-radius: 8px;
+            flex-wrap: wrap;
+        }
+
+        .founder-contact-card img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #c9a84c;
+            flex-shrink: 0;
+        }
+
+        .founder-contact-info h3 {
+            font-size: 26px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 4px;
+        }
+
+        .founder-contact-info .role {
+            color: #c9a84c;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .founder-contact-info p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .founder-contact-info .contact-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .contact-badge {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .contact-badge i {
+            color: #c9a84c;
+            margin-right: 8px;
+        }
 
         @media (max-width: 768px) {
-            .contact-hero { height: 300px; }
-            .contact-hero img { height: 300px; }
-            .contact-hero-overlay h1 { font-size: 30px; }
-            .contact-hero-overlay p { font-size: 14px; padding: 0 15px; }
-            .contact-section-main { padding: 40px 0; }
-            .founder-contact-card { padding: 25px; gap: 20px; }
+            .contact-hero {
+                height: 300px;
+            }
+
+            .contact-hero img {
+                height: 300px;
+            }
+
+            .contact-hero-overlay h1 {
+                font-size: 30px;
+            }
+
+            .contact-hero-overlay p {
+                font-size: 14px;
+                padding: 0 15px;
+            }
+
+            .contact-section-main {
+                padding: 40px 0;
+            }
+
+            .founder-contact-card {
+                padding: 25px;
+                gap: 20px;
+            }
+        }
+
+        /* CUSTOM POPUP DESIGN */
+        .success-modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(4px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        .success-modal {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            animation: modalScale 0.3s ease-out;
+        }
+
+        @keyframes modalScale {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .success-modal i {
+            font-size: 60px;
+            color: #c9a84c;
+            margin-bottom: 20px;
+        }
+
+        .success-modal h4 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .success-modal p {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+
+        .btn-modal-close {
+            background: #1a1a1a;
+            color: #fff;
+            border: none;
+            padding: 10px 30px;
+            font-weight: 700;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .btn-modal-close:hover {
+            background: #c9a84c;
         }
     </style>
 </head>
-<body>
-<div id="page">
 
-    <!-- Header -->
-    <header class="header-v2">
-        <div class="top-header">
-            <div class="container-fluid">
-                <ul class="contacts">
-                    <li>+91 78389 52623</li>
-                    <li><a href="mailto:neerumadan26@gmail.com">neerumadan26@gmail.com</a></li>
-                </ul>
+<body>
+    <div id="page">
+
+        <!-- Header -->
+        <header class="header-v2">
+            <div class="top-header">
+                <div class="container-fluid">
+                    <ul class="contacts">
+                        <li>+91 78389 52623</li>
+                        <li><a href="mailto:neerumadan26@gmail.com">neerumadan26@gmail.com</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="bottom-header">
-            <div class="container-fluid">
-                <span class="mobile-navigation-toggle hidden-md hidden-lg">
-                    <span class="menui top-menu"></span>
-                    <span class="menui mid-menu"></span>
-                    <span class="menui bottom-menu"></span>
-                </span>
-                <div class="logo" style="display: flex; align-items: center;">
-              			<a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
-                            <img src="img/brand-logo.png" alt="Logo" style="max-height: 130px; width: auto; object-fit: contain;">
+            <div class="bottom-header">
+                <div class="container-fluid">
+                    <span class="mobile-navigation-toggle hidden-md hidden-lg">
+                        <span class="menui top-menu"></span>
+                        <span class="menui mid-menu"></span>
+                        <span class="menui bottom-menu"></span>
+                    </span>
+                    <div class="logo" style="display: flex; align-items: center;">
+                        <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
+                            <img src="img/brand-logo.png" alt="Logo"
+                                style="max-height: 130px; width: auto; object-fit: contain;">
                             <div style="margin-left: 15px; text-align: left; line-height: 1.1;">
-                                <span style="font-size: 26px; font-weight: 800; color: #ffffff; font-family: 'PT Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.5px;">Realty <span style="color: #c9a84c;">&amp;</span> Hospitality</span>
-                                <span style="display: block; font-size: 14px; font-weight: 400; color: #aaaaaa; letter-spacing: 5px; margin-top: 5px; text-transform: uppercase;">Talent</span>
+                                <span
+                                    style="font-size: 26px; font-weight: 800; color: #ffffff; font-family: 'PT Sans', sans-serif; text-transform: uppercase; letter-spacing: 1.5px;">Realty
+                                    <span style="color: #c9a84c;">&amp;</span> Hospitality</span>
+                                <span
+                                    style="display: block; font-size: 14px; font-weight: 400; color: #aaaaaa; letter-spacing: 5px; margin-top: 5px; text-transform: uppercase;">Talent</span>
                             </div>
                         </a>
-              		</div>
+                    </div>
 
-				   	<nav class="main-nav" >
-                    <ul class="menu">
-                        <li class="menu-item"><a href="index.html">Home</a></li>
-                        <li class="menu-item"><a href="about.html">About Us</a></li>
-                        <li class="menu-item"><a href="services.html">Services</a></li>
-                        <li class="menu-item current-menu-item"><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <div class="content-wrapper">
-
-        <!-- Hero -->
-        <div class="contact-hero">
-            <img src="img/india-heritage-building.jpg" alt="Contact Realty and Hospitality Talent">
-            <div class="contact-hero-overlay">
-                <h1>Get In Touch</h1>
-                <p>We're here to help you build the right team</p>
-            </div>
-        </div>
-
-        <!-- Founder Profile Card -->
-        <section class="founder-contact-section">
-            <div class="container">
-                <div class="section-header text-center" style="margin-bottom:40px;">
-                    <h5 class="subtitle">Connect Directly</h5>
-                    <h2>Speak with Our Recruitment Expert</h2>
-                    <span><i></i></span>
+                    <nav class="main-nav">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="index.html">Home</a></li>
+                            <li class="menu-item"><a href="about.html">About Us</a></li>
+                            <li class="menu-item"><a href="services.html">Services</a></li>
+                            <li class="menu-item current-menu-item"><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="founder-contact-card">
-                    <img src="img/india-luxury-hotel.jpg" alt="Neeru Sharma">
-                    <div class="founder-contact-info">
-                        <h3>Neeru Sharma</h3>
-                        <div class="role">HR Consultant &amp; Recruitment Specialist | 18+ Years Experience</div>
-                        <p>Whether you're looking to fill a critical role or planning a larger hiring drive, I'm here to help. Reach out directly — let's discuss your requirements and find the perfect talent for your team.</p>
-                        <div class="contact-badges">
-                            <div class="contact-badge">+91 78389 52623</div>
-                            <div class="contact-badge">neerumadan26@gmail.com</div>
-                            <div class="contact-badge">neerumadan26@gmail.com</div>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+
+            <!-- Hero -->
+            <div class="contact-hero">
+                <img src="img/india-heritage-building.jpg" alt="Contact Realty and Hospitality Talent">
+                <div class="contact-hero-overlay">
+                    <h1>Get In Touch</h1>
+                    <p>We're here to help you build the right team</p>
+                </div>
+            </div>
+
+            <!-- Founder Profile Card -->
+            <section class="founder-contact-section">
+                <div class="container">
+                    <div class="section-header text-center" style="margin-bottom:40px;">
+                        <h5 class="subtitle">Connect Directly</h5>
+                        <h2>Speak with Our Recruitment Expert</h2>
+                        <span><i></i></span>
+                    </div>
+                    <div class="founder-contact-card">
+                        <img src="img/neeru-consultant-portrait.jpeg" alt="Neeru Sharma">
+                        <div class="founder-contact-info">
+                            <h3>Neeru Sharma</h3>
+                            <div class="role">HR Consultant &amp; Recruitment Specialist | 18+ Years Experience</div>
+                            <p>Whether you're looking to fill a critical role or planning a larger hiring drive, I'm
+                                here to help. Reach out directly — let's discuss your requirements and find the perfect
+                                talent for your team.</p>
+                            <div class="contact-badges">
+                                <div class="contact-badge">+91 78389 52623</div>
+                                <div class="contact-badge">neerumadan26@gmail.com</div>
+                                <div class="contact-badge"><i class="fa fa-linkedin"></i> <a
+                                        href="https://www.linkedin.com/in/neeru-sharma-a33a2523?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                                        target="_blank" style="color:#fff;text-decoration:none;">View Profile</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Main Contact Section -->
-        <section class="contact-section-main" style="background:#f4f4f4;">
-            <div class="container">
-                <div class="row">
-                    <!-- Contact Info -->
-                    <div class="col-md-5" style="margin-bottom:30px;">
-                        <div class="contact-info-box">
-                            <h3>Contact Information</h3>
-                            <div class="contact-info-item">
-
-                                <div>
-                                    <div class="label">Phone</div>
-                                    <div class="val"><a href="tel:+917838952623">+91 78389 52623</a></div>
-                                </div>
-                            </div>
-                            <div class="contact-info-item">
-
-                                <div>
-                                    <div class="label">Email</div>
-                                    <div class="val">
-                                        <a href="mailto:neerumadan26@gmail.com">neerumadan26@gmail.com</a>
+            <!-- Main Contact Section -->
+            <section class="contact-section-main" style="background:#f4f4f4;">
+                <div class="container">
+                    <div class="row">
+                        <!-- Contact Info -->
+                        <div class="col-md-5" style="margin-bottom:30px;">
+                            <div class="contact-info-box">
+                                <h3>Contact Information</h3>
+                                <div class="contact-info-item">
+                                    <i class="fa fa-phone"></i>
+                                    <div>
+                                        <div class="label">Phone</div>
+                                        <div class="val"><a href="tel:+917838952623">+91 78389 52623</a></div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="contact-info-item">
-
-                                <div>
-                                    <div class="label">Consultant</div>
-                                    <div class="val">Neeru Sharma</div>
-                                </div>
-                            </div>
-                            <div class="contact-info-item">
-
-                                <div>
-                                    <div class="label">Specialization</div>
-                                    <div class="val">Real Estate &amp; Hospitality Recruitment</div>
-                                </div>
-                            </div>
-                            <div class="contact-info-item">
-
-                                <div>
-                                    <div class="label">Working Hours</div>
-                                    <div class="val">Mon – Sat: 9:00 AM – 7:00 PM</div>
-                                </div>
-                            </div>
-                            <!-- Image inside info box -->
-                            <img src="img/india-hotel-exterior.jpg" alt="Hospitality" style="width:100%;border-radius:4px;margin-top:24px;height:160px;object-fit:cover;">
-                        </div>
-                    </div>
-
-                    <!-- Contact Form -->
-                    <div class="col-md-7">
-                        <div class="contact-form-box">
-                            <h3>Send Us a Message</h3>
-                            <p style="color:#666;margin-bottom:24px;font-size:14px;">Looking to hire talent or explore opportunities? Fill in the form below and we'll get back to you promptly.</p>
-                            <form id="contact-form" action="javascript:void(0)" onsubmit="handleContactForm(event)">
-                                <input type="hidden" name="access_key" value="PUT_YOUR_ACCESS_KEY_HERE">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Your Name *</label>
-                                            <input type="text" class="form-control-custom" name="name" id="contact-name" placeholder="Enter your name" required>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>Phone Number *</label>
-                                            <input type="tel" class="form-control-custom" name="phone" id="contact-phone" placeholder="Your phone" required>
+                                <div class="contact-info-item">
+                                    <i class="fa fa-envelope"></i>
+                                    <div>
+                                        <div class="label">Email</div>
+                                        <div class="val">
+                                            <a href="mailto:neerumadan26@gmail.com">neerumadan26@gmail.com</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label>Email Address *</label>
-                                    <input type="email" class="form-control-custom" name="email" id="contact-email" placeholder="your@email.com" required>
+                                <div class="contact-info-item">
+                                    <i class="fa fa-user"></i>
+                                    <div>
+                                        <div class="label">Consultant</div>
+                                        <div class="val">Neeru Sharma</div>
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label>Your Requirement / Message *</label>
-                                    <textarea class="form-control-custom" name="message" id="contact-message" placeholder="Tell us about the role you want to fill, or the opportunity you're looking for..." required></textarea>
+                                <div class="contact-info-item">
+                                    <i class="fa fa-briefcase"></i>
+                                    <div>
+                                        <div class="label">Specialization</div>
+                                        <div class="val">Real Estate &amp; Hospitality Recruitment</div>
+                                    </div>
                                 </div>
-                                <button type="submit" class="btn-submit">Send Message</button>
-                                <div id="form-success" style="display:none;margin-top:16px;padding:14px 20px;background:#e8f5e9;color:#2e7d32;border-radius:4px;font-weight:600;">
-                                    <i class="fa fa-check" style="margin-right:8px;"></i>Thank you! We'll contact you within 24 hours.
+                                <div class="contact-info-item">
+                                    <i class="fa fa-clock-o"></i>
+                                    <div>
+                                        <div class="label">Working Hours</div>
+                                        <div class="val">Mon – Sat: 9:00 AM – 7:00 PM</div>
+                                    </div>
                                 </div>
-                            </form>
+                                <div class="contact-info-item">
+                                    <i class="fa fa-linkedin-square"></i>
+                                    <div>
+                                        <div class="label">LinkedIn</div>
+                                        <div class="val">
+                                            <a href="https://www.linkedin.com/in/realty-and-hospitality-talent-127006401?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                                                target="_blank" style="color:#c9a84c;font-weight:700;">Company Profile</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Image inside info box -->
+                                <img src="img/india-hotel-exterior.jpg" alt="Hospitality"
+                                    style="width:100%;border-radius:4px;margin-top:24px;height:160px;object-fit:cover;">
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <div class="col-md-7">
+                            <div class="contact-form-box">
+                                <h3>Send Us a Message</h3>
+                                <p style="color:#666;margin-bottom:24px;font-size:14px;">Looking to hire talent or
+                                    explore opportunities? Fill in the form below and we'll get back to you promptly.
+                                </p>
+                                <form id="contact-form" action="javascript:void(0)" onsubmit="handleContactForm(event)">
+                                    <input type="hidden" name="access_key" value="PUT_YOUR_ACCESS_KEY_HERE">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Your Name *</label>
+                                                <input type="text" class="form-control-custom" name="name"
+                                                    id="contact-name" placeholder="Enter your name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Phone Number *</label>
+                                                <input type="tel" class="form-control-custom" name="phone"
+                                                    id="contact-phone" placeholder="Your phone" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email Address *</label>
+                                        <input type="email" class="form-control-custom" name="email" id="contact-email"
+                                            placeholder="your@email.com" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Your Requirement / Message *</label>
+                                        <textarea class="form-control-custom" name="message" id="contact-message"
+                                            placeholder="Tell us about the role you want to fill, or the opportunity you're looking for..."
+                                            required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn-submit">Send Message</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- Why Contact Us (dark with image bg) -->
+            <section class="why-contact-section">
+                <div class="container">
+                    <div class="section-header text-center" style="margin-bottom:50px;">
+                        <h5 class="subtitle" style="color:#c9a84c;">Why Reach Out</h5>
+                        <h2 style="color:#fff;">What Happens When You Contact Us</h2>
+                        <span><i></i></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="why-box">
+                                <i class="fa fa-comments"></i>
+                                <h5>Quick Response</h5>
+                                <p>We respond to all enquiries within 24 hours — usually much faster.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="why-box">
+                                <i class="fa fa-lock"></i>
+                                <h5>100% Confidential</h5>
+                                <p>Your search requirements are handled with complete confidentiality.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="why-box">
+                                <i class="fa fa-rocket"></i>
+                                <h5>Fast Turnaround</h5>
+                                <p>We aim to present shortlisted candidates within 3–5 business days.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="why-box">
+                                <i class="fa fa-star"></i>
+                                <h5>Expert Advice</h5>
+                                <p>Get free guidance on role expectations, market salaries, and hiring strategy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div><!-- end content-wrapper -->
+
+        <!-- SUCCESS POPUP HTML -->
+        <div id="successPopup" class="success-modal-overlay">
+            <div class="success-modal">
+                <i class="fa fa-check-circle"></i>
+                <h4>Thank You!</h4>
+                <p>Your message has been sent successfully. We will get back to you shortly.</p>
+                <button class="btn-modal-close" onclick="closePopup()">Close</button>
             </div>
-        </section>
+        </div>
 
-        <!-- Why Contact Us (dark with image bg) -->
-        <section class="why-contact-section">
-            <div class="container">
-                <div class="section-header text-center" style="margin-bottom:50px;">
-                    <h5 class="subtitle" style="color:#c9a84c;">Why Reach Out</h5>
-                    <h2 style="color:#fff;">What Happens When You Contact Us</h2>
-                    <span><i></i></span>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="why-box">
-                            <i class="fa fa-comments"></i>
-                            <h5>Quick Response</h5>
-                            <p>We respond to all enquiries within 24 hours — usually much faster.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="why-box">
-                            <i class="fa fa-lock"></i>
-                            <h5>100% Confidential</h5>
-                            <p>Your search requirements are handled with complete confidentiality.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="why-box">
-                            <i class="fa fa-rocket"></i>
-                            <h5>Fast Turnaround</h5>
-                            <p>We aim to present shortlisted candidates within 3–5 business days.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="why-box">
-                            <i class="fa fa-star"></i>
-                            <h5>Expert Advice</h5>
-                            <p>Get free guidance on role expectations, market salaries, and hiring strategy.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </div><!-- end content-wrapper -->
-
-    <!-- Footer -->
-    		<!-- Footer -->
-		<footer>
-			<div class="top-footer" style="padding:60px 0;">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3 col-sm-6 col-xs-12">
-							<div class="widget widget_text">
-	                            <h4 class="widget-title" style="color:#fff;">About Us</h4>
-	                            <div class="widget-body">
-                                    <div style="margin-bottom: 20px; display: flex; align-items: center; margin-left: -25px;">
-                                        <a href="index.html" style="display: flex; align-items: center; text-decoration: none;">
-                                            <img src="img/brand-logo.png" alt="Logo" style="height: 75px; width: auto; object-fit: contain;">
+        <!-- Footer -->
+        <!-- Footer -->
+        <footer>
+            <div class="top-footer" style="padding:60px 0;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="widget widget_text">
+                                <h4 class="widget-title" style="color:#fff;">About Us</h4>
+                                <div class="widget-body">
+                                    <div
+                                        style="margin-bottom: 20px; display: flex; align-items: center; margin-left: -25px;">
+                                        <a href="index.html"
+                                            style="display: flex; align-items: center; text-decoration: none;">
+                                            <img src="img/brand-logo.png" alt="Logo"
+                                                style="height: 75px; width: auto; object-fit: contain;">
                                             <div style="text-align: left; line-height: 1.1; margin-left: 10px;">
-                                                <span style="font-size: 16px; font-weight: 800; color: #ffffff; font-family: 'PT Sans', sans-serif; text-transform: uppercase; letter-spacing: 1px;">Realty <span style="color: #c9a84c;">&amp;</span> Hospitality</span>
-                                                <span style="display: block; font-size: 11px; font-weight: 400; color: #aaaaaa; letter-spacing: 4px; margin-top: 4px; text-transform: uppercase;">Talent</span>
+                                                <span
+                                                    style="font-size: 16px; font-weight: 800; color: #ffffff; font-family: 'PT Sans', sans-serif; text-transform: uppercase; letter-spacing: 1px;">Realty
+                                                    <span style="color: #c9a84c;">&amp;</span> Hospitality</span>
+                                                <span
+                                                    style="display: block; font-size: 11px; font-weight: 400; color: #aaaaaa; letter-spacing: 4px; margin-top: 4px; text-transform: uppercase;">Talent</span>
                                             </div>
                                         </a>
                                     </div>
-	                            	<p style="color:#aaa; line-height: 1.8;">A specialized recruitment consultancy for Real Estate and Hospitality with 18+ years of expertise. We connect the right talent with the right businesses.</p>
-	                            </div>
-	                        </div>
-						</div>
-						
-						<div class="col-md-3 col-sm-6 col-xs-12">
-							<div class="widget">
-	                            <h4 class="widget-title">Our Services</h4>
-	                            <div class="widget-body">
-	                            	<ul class="clean-list" style="line-height:2.2;">
-	                            		<li><a href="services.html" style="color:#666;">Real Estate Recruitment</a></li>
-	                            		<li><a href="services.html" style="color:#666;">Hospitality Talent</a></li>
-	                            		<li><a href="services.html" style="color:#666;">Sales &amp; Business Dev</a></li>
-	                            		<li><a href="services.html" style="color:#666;">Front Office Roles</a></li>
-	                            		<li><a href="services.html" style="color:#666;">Executive Search</a></li>
-	                            	</ul>
-	                            </div>
-	                        </div>
-						</div>
+                                    <p style="color:#aaa; line-height: 1.8;">A specialized recruitment consultancy for
+                                        Real Estate and Hospitality with 18+ years of expertise. We connect the right
+                                        talent with the right businesses.</p>
+                                </div>
+                            </div>
+                        </div>
 
-						<div class="col-md-3 col-sm-6 col-xs-12">
-							<div class="widget">
-	                            <h4 class="widget-title">Quick Links</h4>
-	                            <div class="widget-body">
-	                            	<ul class="clean-list" style="line-height:2.2;">
-	                            		<li><a href="index.html" style="color:#666;">Home</a></li>
-	                            		<li><a href="about.html" style="color:#666;">About Us</a></li>
-	                            		<li><a href="services.html" style="color:#666;">Services</a></li>
-	                            		<li><a href="contact.html" style="color:#666;">Contact Us</a></li>
-	                            	</ul>
-	                            </div>
-	                        </div>
-						</div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="widget">
+                                <h4 class="widget-title">Our Services</h4>
+                                <div class="widget-body">
+                                    <ul class="clean-list" style="line-height:2.2;">
+                                        <li><a href="services.html" style="color:#666;">Real Estate Recruitment</a></li>
+                                        <li><a href="services.html" style="color:#666;">Hospitality Talent</a></li>
+                                        <li><a href="services.html" style="color:#666;">Sales &amp; Business Dev</a>
+                                        </li>
+                                        <li><a href="services.html" style="color:#666;">Front Office Roles</a></li>
+                                        <li><a href="services.html" style="color:#666;">Executive Search</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-						<div class="col-md-3 col-sm-6 col-xs-12">
-							<div class="widget widget_contact">
-	                            <h4 class="widget-title">Contact Info</h4>
-	                            <div class="widget-body">
-	                            	<ul class="contact-info clean-list" style="margin:0;">
-	                            		<li style="margin-bottom:12px;display:flex;">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="widget">
+                                <h4 class="widget-title">Quick Links</h4>
+                                <div class="widget-body">
+                                    <ul class="clean-list" style="line-height:2.2;">
+                                        <li><a href="index.html" style="color:#666;">Home</a></li>
+                                        <li><a href="about.html" style="color:#666;">About Us</a></li>
+                                        <li><a href="services.html" style="color:#666;">Services</a></li>
+                                        <li><a href="contact.html" style="color:#666;">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="widget widget_contact">
+                                <h4 class="widget-title">Contact Info</h4>
+                                <div class="widget-body">
+                                    <ul class="contact-info clean-list" style="margin:0;">
+                                        <li style="margin-bottom:12px;display:flex;">
                                             <div>
-                                                <span style="display:block;font-size:12px;text-transform:uppercase;color:#999;letter-spacing:1px;margin-bottom:2px;">Phone:</span>
-	                            			    <p style="color:#ffffff;font-weight:600;margin:0;">+91 78389 52623</p>
+                                                <span
+                                                    style="display:block;font-size:12px;text-transform:uppercase;color:#999;letter-spacing:1px;margin-bottom:2px;">Phone:</span>
+                                                <p style="color:#ffffff;font-weight:600;margin:0;">+91 78389 52623</p>
                                             </div>
-	                            		</li>
-	                            		<li style="margin-bottom:12px;display:flex;">
-	                            			<div>
-                                                <span style="display:block;font-size:12px;text-transform:uppercase;color:#999;letter-spacing:1px;margin-bottom:2px;">Email:</span>
-	                            			    <p style="margin:0;"><a href="mailto:neerumadan26@gmail.com" style="color:#ffffff;font-weight:600;">neerumadan26@gmail.com</a></p>
+                                        </li>
+                                        <li style="margin-bottom:12px;display:flex;">
+                                            <div>
+                                                <span
+                                                    style="display:block;font-size:12px;text-transform:uppercase;color:#999;letter-spacing:1px;margin-bottom:2px;">Email:</span>
+                                                <p style="margin:0;"><a href="mailto:neerumadan26@gmail.com"
+                                                        style="color:#ffffff;font-weight:600;">neerumadan26@gmail.com</a>
+                                                </p>
                                             </div>
-	                            		</li>
-	                            	</ul>
-	                            </div>
-	                        </div>
-						</div>
-					</div>
-				</div>
-			</div>
+                                        </li>
+                                        <li style="margin-bottom:12px;display:flex;">
+                                            <div>
+                                                <span
+                                                    style="display:block;font-size:12px;text-transform:uppercase;color:#999;letter-spacing:1px;margin-bottom:2px;">LinkedIn:</span>
+                                                <p style="margin:0;"><a
+                                                        href="https://www.linkedin.com/in/realty-and-hospitality-talent-127006401?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                                                        target="_blank" style="color:#ffffff;font-weight:600;">Visit
+                                                        Company Page</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-			<div class="bottom-footer" style="background:#1a1a1a;padding:24px 0;">
-				<div class="container">
-					<p class="alignleft align-left copyright" style="color:#aaa;margin:0;">
-						Copyright &copy; 2024 Realty &amp; Hospitality Talent. All Rights Reserved.
-					</p>
-					<p class="alignright align-right copyright" style="color:#aaa;margin:0;">
-						Led by <strong style="color:#fff;">Neeru Sharma</strong> | HR Consultant &amp; Recruitment Specialist
-					</p>
-				</div>
-			</div>
-		</footer>
-</div>
+            <div class="bottom-footer" style="background:#1a1a1a;padding:24px 0;">
+                <div class="container">
+                    <p class="alignleft align-left copyright" style="color:#aaa;margin:0;">
+                        Copyright &copy; 2024 Realty &amp; Hospitality Talent. All Rights Reserved.
+                    </p>
+                    <p class="alignright align-right copyright" style="color:#aaa;margin:0;">
+                        Led by <strong style="color:#fff;">Neeru Sharma</strong> | HR Consultant &amp; Recruitment
+                        Specialist
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/modernizr.js"></script>
-<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-<script type="text/javascript" src="js/isotope.js"></script>
-<script type="text/javascript" src="js/options.js"></script>
-<script>
-async function handleContactForm(e) {
-    e.preventDefault();
-    const form = e.target;
-    // Show a small loader text on the button
-    const submitBtn = form.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = "Sending...";
-    submitBtn.disabled = true;
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/isotope.js"></script>
+    <script type="text/javascript" src="js/options.js"></script>
+    <script>
+        async function handleContactForm(e) {
+            e.preventDefault();
+            const form = e.target;
+            // Show a small loader text on the button
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = "Sending...";
+            submitBtn.disabled = true;
 
-    try {
-        const formData = new FormData(form);
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
+            try {
+                const formData = new FormData(form);
+                const object = Object.fromEntries(formData);
+                const json = JSON.stringify(object);
 
-        const response = await fetch("http://localhost:5000/api/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "Accept": "application/json"
-            },
-            body: json
-        });
-        
-        const result = await response.json();
-        
-        if (response.status == 200) {
-            alert("Message sent successfully! We will get back to you shortly.");
-            document.getElementById('form-success').style.display = 'block';
-            document.getElementById('form-success').innerText = 'Message sent successfully! Check your dashboard at http://localhost:5000/admin-view';
-            form.reset();
-        } else {
-            document.getElementById('form-success').style.display = 'block';
-            document.getElementById('form-success').style.color = '#e4405f';
-            document.getElementById('form-success').innerText = 'Error: ' + result.message;
+                const response = await fetch("http://localhost:5000/api/contact", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: json
+                });
+
+                if (response.status == 200) {
+                    document.getElementById('successPopup').style.display = 'flex';
+                    form.reset();
+                } else {
+                    alert('Error: ' + result.message);
+                }
+            } catch (error) {
+                alert('Something went wrong!');
+            } finally {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }
         }
-    } catch(error) {
-        document.getElementById('form-success').style.display = 'block';
-        document.getElementById('form-success').style.color = '#e4405f';
-        document.getElementById('form-success').innerText = 'Something went wrong!';
-    } finally {
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-        setTimeout(function(){ document.getElementById('form-success').style.display = 'none'; }, 6000);
-    }
-}
-</script>
+
+        function closePopup() {
+            document.getElementById('successPopup').style.display = 'none';
+        }
+    </script>
 </body>
+
 </html>
