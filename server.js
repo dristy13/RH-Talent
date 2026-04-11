@@ -11,14 +11,27 @@ const rateLimit = require('express-rate-limit');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Trust the first proxy (e.g., Render, Heroku)
+app.set('trust proxy', 1);
+
 // Security Middleware
 app.use(helmet({
-    contentSecurityPolicy: false, // Disabled to ensure compatibility with existing scripts/fonts
+    contentSecurityPolicy: false,
 }));
+
+// Block access to sensitive files (Security Fix)
+app.use((req, res, next) => {
+    const blocked = ['.env', '.git', 'database.sqlite', 'server.js', 'package.json'];
+    const url = req.url.toLowerCase();
+    if (blocked.some(file => url.includes(file.toLowerCase()))) {
+        return res.status(403).send('Forbidden: Access to this file is restricted for security.');
+    }
+    next();
+});
 
 const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 100, // Limit each IP to 100 requests per windowMs
+    max: 5000, // Very high limit of 5000 requests per 15 minutes
     message: { message: "Too many requests from this IP, please try again after 15 minutes." }
 });
 
@@ -28,7 +41,7 @@ app.use(limiter);
 // Specific rate limit for contact form (prevent spam)
 const contactLimiter = rateLimit({
     windowMs: 60 * 60 * 1000, // 1 hour
-    max: 10, // Limit each IP to 10 contact submissions per hour
+    max: 100, // Even higher limit for contact submissions
     message: { message: "Too many message attempts. Please wait an hour before trying again." }
 });
 
