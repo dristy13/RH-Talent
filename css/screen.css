@@ -1,4 +1,4 @@
-﻿/*
+/*
 Project: Bricks
 
 [Table of contents]
@@ -6780,7 +6780,9 @@ input.form-send {
 
     /* Section Spacing */
     section { padding: 40px 0 !important; }
+    .hero-section { padding-top: 0 !important; }
     .features-section .section-header { margin-bottom: 30px !important; }
+    .section-header.button p { font-size: 13px !important; line-height: 1.3 !important; padding: 0 0 15px !important; }
     
     /* Footer Realignment */
     footer .top-footer { padding: 40px 15px !important; }
